@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name": "guardian",
+        "image": "https://wiki.guildwars2.com/images/8/88/Guardian_04_concept_art.png"
+    },
+    {
+        "id":2,
+        "name": "revenant",
+        "image": "https://wiki.guildwars2.com/images/f/fa/Revenant_01_concept_art.jpg"
+    },
+    {
+        "id":3,
+        "name": "warrior",
+        "image": "https://wiki.guildwars2.com/images/5/56/Warrior_04_concept_art.png"
+    },
+    {
+        "id":4,
+        "name": "engineer",
+        "image": "https://wiki.guildwars2.com/images/e/e5/Engineer_04_concept_art.png"
+    },
+    {
+        "id":5,
+        "name": "ranger",
+        "image": "https://wiki.guildwars2.com/images/f/f5/Ranger_04_concept_art.png"
+    },
+    {
+        "id":6,
+        "name": "thief",
+        "image": "https://wiki.guildwars2.com/images/3/35/Thief_04_concept_art.png"
+    },
+    {
+        "id":7,
+        "name": "elementalist",
+        "image": "https://wiki.guildwars2.com/images/5/5e/Elementalist_04_concept_art.png"
+    },
+    {
+        "id":8,
+        "name": "mesmer",
+        "image": "https://wiki.guildwars2.com/images/4/4a/Mesmer_04_concept_art.png"
+    },
+    {
+        "id":9,
+        "name": "necromancer",
+        "image": "https://wiki.guildwars2.com/images/1/14/Necromancer_03_concept_art.jpg"
+    },
+    {
+        "id":10,
+        "name": "dragonhunter",
+        "image": "https://wiki.guildwars2.com/images/e/eb/Spec_image_Dragonhunter.jpg"
+    },
+    {
+        "id":11,
+        "name": "firebrand",
+        "image": "https://wiki.guildwars2.com/images/f/f3/Firebrand.jpg"
+    },
+    {
+        "id":12,
+        "name": "berserker",
+        "image": "https://wiki.guildwars2.com/images/6/64/Spec_image_Berserker.jpg"
+    }
+]
