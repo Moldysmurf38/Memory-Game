@@ -20,15 +20,24 @@ class App extends Component {
   event.preventDefault();
   let userChoice = event.currentTarget.id;
   if (choiceArray.indexOf(userChoice) === -1) {
-    console.log("true")
+    console.log("true");
     this.setState({ count: this.state.count + 1 });
     choiceArray.push(userChoice);
   } else {
-    console.log("false")
-    this.setState({total: this.state.count})
-  }
-  
-  //console.log(choiceList);
+    console.log("false");
+    if (this.state.count > this.state.total) {
+      console.log("greater");
+      this.setState({total: this.state.count});
+      console.log(choiceArray)
+      if (choiceArray.length === 12) {
+        console.log("You win!")
+      }
+    }
+    choiceArray.length= 0;
+    this.setState({count: 0});
+  };
+
+  //console.log(choiceArray);
  };
 
   render() {
