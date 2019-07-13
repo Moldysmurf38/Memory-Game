@@ -10,13 +10,15 @@ Check out the deployed version here: https://memory-game38.herokuapp.com/
 
 ### **Prerequisites:**
 
+node_modules (see installation section)
+
+### **Installing:**
+
 -Clone the github repository.
 
 -In the command line of the main directory of the app, type in the command npm install.
 
 -After the required modules are installed, in the same directory command line, type npm start.
-
-### **Installing:**
 
 ### **Built With:**
 
