@@ -17,7 +17,6 @@ class App extends Component {
   };
 
   playerChoice = (event, image) => {
-    console.log(images);
     event.preventDefault();
     let userChoice = event.currentTarget.id;
     if (choiceArray.indexOf(userChoice) === -1) {
