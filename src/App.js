@@ -58,7 +58,6 @@ class App extends Component {
                   src={image.image}
                   alt={image.name}
                   onClick={this.playerChoice}
-                  dataState="unselected"
                   key={i}
                 />
               ))}
