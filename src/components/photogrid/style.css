@@ -1,5 +1,5 @@
 .photo-grid {
-    background: red;
+    background: silver;
     border-radius: 5px;
     display: flex;
     flex-flow: row wrap;

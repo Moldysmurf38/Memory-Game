@@ -8,10 +8,8 @@ body {
 .player-score {
   text-align: center;
   font-size: 40px;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  color: red;
+  color: black;
   padding: 5px;
-  background-color: grey;
+  background-color: silver;
   border-radius: 5px;
 }

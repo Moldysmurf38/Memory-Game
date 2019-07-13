@@ -1,9 +1,7 @@
 .game-instruction {
     font-size: 40px;
-    color: green;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    background-color: black;
+    color: black;
+    background-color: silver;
     border-radius: 5px;
     padding: 5px;
     text-align: center;

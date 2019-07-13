@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PageTitle from "./components/title"
 import InstructBody from "./components/instructions";
 import PhotoGrid from "./components/photogrid";
@@ -16,29 +16,27 @@ class App extends Component {
     total: 0,
   };
 
- playerChoice = (event,image) => {
-  event.preventDefault();
-  let userChoice = event.currentTarget.id;
-  if (choiceArray.indexOf(userChoice) === -1) {
-    console.log("true");
-    this.setState({ count: this.state.count + 1 });
-    choiceArray.push(userChoice);
-  } else {
-    console.log("false");
-    if (this.state.count > this.state.total) {
-      console.log("greater");
-      this.setState({total: this.state.count});
-      console.log(choiceArray)
+  playerChoice = (event, image) => {
+    console.log(images);
+    event.preventDefault();
+    let userChoice = event.currentTarget.id;
+    if (choiceArray.indexOf(userChoice) === -1) {
+      this.setState({ count: this.state.count + 1 });
+      choiceArray.push(userChoice);
       if (choiceArray.length === 12) {
         console.log("You win!")
+        this.setState({ total: this.state.count });
+        choiceArray.length = 0;
+        this.setState({ count: 0 });
       }
-    }
-    choiceArray.length= 0;
-    this.setState({count: 0});
+    } else {
+      if (this.state.count > this.state.total) {
+        this.setState({ total: this.state.count });
+      }
+      choiceArray.length = 0;
+      this.setState({ count: 0 });
+    };
   };
-
-  //console.log(choiceArray);
- };
 
   render() {
     return (
@@ -55,16 +53,16 @@ class App extends Component {
           </div>
           <div className="card-div">
             <PhotoGrid>
-                {this.state.images.map((image, i ) => (
-                  <ImageCard
-                    id={image.id}
-                    src={image.image}
-                    alt={image.name}
-                    onClick={this.playerChoice}
-                    dataState="unselected"
-                    key= {i}
-                  />
-                ))}
+              {this.state.images.map((image, i) => (
+                <ImageCard
+                  id={image.id}
+                  src={image.image}
+                  alt={image.name}
+                  onClick={this.playerChoice}
+                  dataState="unselected"
+                  key={i}
+                />
+              ))}
             </PhotoGrid>
           </div>
         </div>
