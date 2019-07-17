@@ -23,19 +23,33 @@ class App extends Component {
       this.setState({ count: this.state.count + 1 });
       choiceArray.push(userChoice);
       if (choiceArray.length === 12) {
-        console.log("You win!")
-        this.setState({ total: this.state.count });
+        console.log("You win!");
+        this.setState({ total: 12 });
         choiceArray.length = 0;
         this.setState({ count: 0 });
       }
+      this.shuffle(images)
     } else {
       if (this.state.count > this.state.total) {
         this.setState({ total: this.state.count });
       }
       choiceArray.length = 0;
       this.setState({ count: 0 });
+      this.shuffle(images)
     };
   };
+
+  shuffle = (images) => {
+    var j, x, i;
+    for (i = images.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = images[i];
+        images[i] = images[j];
+        images[j] = x;
+    }
+    return console.log(images);
+}
+  
 
   render() {
     return (
